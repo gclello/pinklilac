@@ -1,0 +1,216 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+  background-color: #FFFFFF;
+  color: #71706F;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+h1 {
+  color: #CE3175;
+  font-weight: 700;
+}
+
+h2 {
+  color: #E07775;
+}
+
+h3 {
+  color: #DBAFB8;
+}
+
+h4 {
+  color: #56A59F;
+}
+
+h5 {
+  color: #F3EF80;
+}
+
+h6 {
+  color: #E3E1D5;
+}
+
+p {
+
+}
+
+a {
+  color: brown;
+  text-decoration: none;
+
+  &:visited {
+    color: black;
+    text-decoration: none;
+  }
+
+  &:hover {
+      color: gray;
+      text-decoration: none;
+  }
+}
+
+#intro {
+  height: 100vh;
+  min-height: 600px;
+  background-color: #CE3175;
+  text-align: center;
+}
+
+.intro-anchor {
+  width: 100%;
+  cursor: s-resize;
+}
+
+.vcenter-helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.intro-content {
+  vertical-align: middle;
+  display: inline-block;
+  background-image: url("../assets/intro.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  height: 300px;
+  width: 360px;
+  cursor: pointer;
+  text-indent: -9999px;
+}
+
+.arrow {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 80px;
+  background-image: url("../assets/arrow.png");
+  height: 42px;
+  width: 42px;
+  z-index: 999999;
+  cursor: pointer;
+}
+
+@media (max-width: 575px) {
+  #intro {
+    min-height: 500px;
+  }
+  
+  .intro-content {
+    background-image: url("../assets/intro-xs.png");
+    height: 233px;
+    width: 280px;
+  }
+}
+
+@media (max-height: 320px) {
+  #intro {
+    height: 85vh;
+    min-height: 0px;
+  }
+  
+  .intro-content {
+    background-image: url("../assets/intro-xxs.png");
+    height: 180px;
+    width: 280px;
+  }
+  
+  .arrow {
+    display: none;
+  }
+}
+
+#main {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#main-content {
+  background-color: #ffffff;
+  padding: 10px;
+  margin-top: 0;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  #main-content {
+    margin-top: 50%;
+    text-align: left;
+  }
+}
+
+#optin {
+  background-color: #71706F;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.0rem;
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  #optin {
+    font-size: 1.2rem;
+  }
+}
+
+#bastidores {
+  text-align: center;
+}
+
+#bastidores img {
+  width: 100%;
+  max-width: 400px;
+}
+
+#footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  background-color: #CE3175;
+  color: #E3E1D5;
+  text-align: center;
+}
+
+/* MailChimp Form Embed Code - Slim - 12/15/2015 v10.7 */
+#mc_embed_signup form {display:block; position:relative; text-align:left; padding:10px 0 10px 3%}
+#mc_embed_signup h2 {font-weight:bold; padding:0; margin:15px 0; font-size:1.4em;}
+#mc_embed_signup input {border:1px solid #999; -webkit-appearance:none;}
+#mc_embed_signup input[type=checkbox]{-webkit-appearance:checkbox;}
+#mc_embed_signup input[type=radio]{-webkit-appearance:radio;}
+#mc_embed_signup input:focus {border-color:#333;}
+#mc_embed_signup .button {clear:both; background-color: #56A59F; border: 0 none; border-radius:4px; letter-spacing:.03em; color: #FFFFFF; cursor: pointer; display: inline-block; font-size:15px; height: 32px; line-height: 32px; margin: 0 5px 10px 0; padding:0; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: auto; transition: all 0.23s ease-in-out 0s;}
+#mc_embed_signup .button:hover {background-color:#CE3175;}
+#mc_embed_signup .small-meta {font-size: 11px;}
+#mc_embed_signup .nowrap {white-space:nowrap;}     
+#mc_embed_signup .clear {clear:none; display:inline;}
+
+#mc_embed_signup label {display:block; font-size:16px; padding-bottom:10px; font-weight:bold;}
+#mc_embed_signup input.email {font-family:"Open Sans","Helvetica Neue",Arial,Helvetica,Verdana,sans-serif; font-size: 15px; display:block; padding:0 0.4em; margin:0 4% 10px 0; min-height:32px; width:58%; min-width:130px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
+#mc_embed_signup input.button {display:block; width:35%; margin:0 0 10px 0; min-width:90px;}
+
+#mc_embed_signup div#mce-responses {float:left; top:-1.4em; padding:0em .5em 0em .5em; overflow:hidden; width:90%;margin: 0 5%; clear: both;}
+#mc_embed_signup div.response {margin:1em 0; padding:1em .5em .5em 0; font-weight:bold; float:left; top:-1.5em; z-index:1; width:80%;}
+#mc_embed_signup #mce-error-response {display:none;}
+#mc_embed_signup #mce-success-response {color:#529214; display:none;}
+#mc_embed_signup label.error {display:block; float:none; width:auto; margin-left:1.05em; text-align:left; padding:.5em 0;}
+
+#mc_embed_signup {
+  clear: left;
+}
+
+#mc_embed_signup input.email {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#mc_embed_signup input.button {
+  margin-left: auto;
+  margin-right: auto;
+}
