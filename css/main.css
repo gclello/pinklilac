@@ -145,6 +145,12 @@ a {
   }
 }
 
+@media (min-width: 1200px) {
+  #main-content {
+    margin-top: 40%;
+  }
+}
+
 #optin {
   background-color: #71706F;
   color: #ffffff;
